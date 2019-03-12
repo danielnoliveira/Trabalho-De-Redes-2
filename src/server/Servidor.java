@@ -14,6 +14,7 @@ public class Servidor {
 		this.file_dir = file_dir;
 		try {
 			this.ds = new DatagramSocket(this.porta);
+			
 		} catch (SocketException e) {
 			System.out.println("Porta não disponivel!!!\nSistema encerrando!!!");
 			System.exit(0);
